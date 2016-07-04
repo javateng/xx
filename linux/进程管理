@@ -1,0 +1,10 @@
+1)后台执行，且将stdout/stderr输出到log.txt: tar -zpcvf /tmp/etc.tar.gz /etc > /tmp/log.txt 2>&1 &
+2)将目前的工作丢到后台中暂停：【Ctrl】+z
+3)查看目前的后台工作状态： jobs [-lrs]
+4)将后台工作拿到前台处理: fg %jobnumber (%可有可无)
+5)将工作在后台下的状态变运行中：bg %jobnumber
+6)立即强制删除：kill -9 %jobnumber
+7)正常的程序方式终止：kill -15 %jobnumber
+8)脱机管理：nohup [命令与参数] & 
+
+su -l root

@@ -1,0 +1,23 @@
+1)管道命令仅会处理standard output，对于standard error output会予以忽略
+2)cut -d '分隔符' -f fields (cut -d ':' -f 3,5)
+  cut -c 字符范围   （cut -c 13-）
+3)grep [-acinv] [--color=auto] '查找字符串' filename
+	-a:将binary文件以text文件的方式查找数据
+	-c:计算找到‘查找字符串’的次数
+	-i:忽略大小写
+	-n:输出行号
+	-v:方向选择
+	xxxxx | grep -n -A3 -B2 'eth' （将查到的行的前2行和后3行显示出来）
+4)wc [-lwm]
+5)uniq [-ic]
+	-i:忽略大小写
+	-c:进行计数
+6)sort [-fbMnrtuk] filename
+	-f:忽略大小写
+	-b:忽略最前面的空格
+	-M:以月份的名字来排序，如JAN,DEC
+	-n:
+	-r:反向排序
+	-t:分隔符，默认是[Tab],与-k组合使用
+	-k:以哪个区间(field)来进行排序
+	-u:就是uniq
